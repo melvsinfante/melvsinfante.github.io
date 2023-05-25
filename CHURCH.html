@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAHWEH'S HIGHLY FAVORED CHRISTIAN CHURCH</title>
+  <style>
+    body {
+      background-image: url("background-image.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px; /* Adjust the width as needed */
+    }
+
+    .home-photos {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .home-photo {
+      width: 30%; /* Adjust the width as needed */
+    }
+    
+    /* Add any additional custom styles here */
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var sections = document.querySelectorAll("section");
+      var navLinks = document.querySelectorAll("nav a");
+
+      function hideSections() {
+        sections.forEach(function(section) {
+          section.style.display = "none";
+        });
+      }
+
+      function showSection(sectionId) {
+        hideSections();
+        document.getElementById(sectionId).style.display = "block";
+      }
+
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+          var targetSectionId = event.target.getAttribute("href").substring(1);
+          showSection(targetSectionId);
+        });
+      });
+
+      // Show the initial section (Home page)
+      showSection("home");
+    });
+  </script>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <img src="logo.png" alt="Church Logo" class="logo">
+    <h1>Welcome to YAHWEH'S HIGHLY FAVORED CHRISTIAN CHURCH</h1>
+    <!-- Add any additional content for the header -->
+  </header>
+
+  <!-- Navigation section -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+	<li><a href="#About Us">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content section -->
+  <main>
+    <section id="home">
+      <h2></h2>
+      <div class="home-photos">
+        <img src="A.jpg" alt="A.jpg" class="home-photo">
+        <img src="B.jpg" alt="B.jpg" class="home-photo">
+        <img src="C.jpg" alt="C.jpg" class="home-photo">
+      </div>
+    </section>
+
+	<section id="About Us">
+      <h2>About Us</h2>
+    
+  <p>Welcome to Yahweh's Highly Favored Christian Church, a place where faith, love, and community thrive. Founded by Pastor Randy Javellana, our church is dedicated to spreading the message of God's love and grace to all.</p>
+  
+  <p>At Yahweh's Highly Favored Christian Church, we believe in the power of the Holy Spirit and the transformative impact of God's Word. We strive to create an atmosphere of worship, discipleship, and fellowship, where individuals can encounter God and grow in their faith.</p>
+  
+  <p>Pastor Randy Javellana, our visionary leader, has been serving in ministry for several years, with a deep passion for preaching the Gospel and shepherding God's people. Under his guidance, our church community has flourished, with a focus on spiritual growth, outreach, and serving the local community.</p>
+  
+  <p>Join us in our vibrant worship services, where we praise God, learn from His Word, and experience His presence. We offer various ministries and programs for individuals of all ages, including Sunday worship services, Bible studies, prayer meetings, youth groups, and community outreach initiatives.</p>
+  
+  <p>Whether you are new to the faith, seeking spiritual guidance, or looking for a community of believers to connect with, Yahweh's Highly Favored Christian Church welcomes you with open arms. Come and be a part of our church family as we journey together in faith, living out the love of Christ and impacting the world around us.</p>
+</section>
+
+
+    <section id="services">
+      <h2>Services</h2>
+      <p>Join us for our weekly services and ministry programs:</p>
+      <h3>Sunday Worship Service</h3>
+      <p>Time: 8:30 AM</p>
+      <h3>Kids Ministry</h3>
+      <p>Time: 1:00 PM</p>
+      <p>Our Kids Ministry provides a fun and engaging environment for children to learn about God's love and grow in their faith.</p>
+      <h3>Discipleship</h3>
+      <p>Time: Wednesday at 7:00 PM</p>
+      <p>Our Discipleship program offers an opportunity for deeper study of God's Word, equipping believers to grow in their relationship with Christ and become mature disciples.</p>
+      <!-- Add the rest of the content for the "Services" section -->
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <p>List any upcoming events or special gatherings in your church.</p>
+      <!-- Add the rest of the content for the "Events" section -->
+    </section>
+
+   <section id="contact">
+  <h2>Contact Us</h2>
+  <p>Connect with us on social media:</p>
+  <a href="https://www.facebook.com/YHFCC" target="_blank" rel="noopener noreferrer">Visit our Facebook Page</a>
+  <!-- Add any additional contact information here -->
+</section>
+
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 YAHWEH'S HIGHLY FAVORED CHRISTIAN CHURCH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
